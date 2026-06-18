@@ -1,0 +1,154 @@
+# Instincts generated from https://github.com/pythontime/oreilly-finetuning-llm
+# Generated: 2026-03-17T17:58:59.562Z
+# Version: 2.0
+
+---
+id: oreilly-finetuning-llm-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/pythontime/oreilly-finetuning-llm
+---
+
+# Oreilly Finetuning Llm Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 15 chars
+- Based on 21 commits
+
+---
+id: oreilly-finetuning-llm-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/pythontime/oreilly-finetuning-llm
+---
+
+# Oreilly Finetuning Llm Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: oreilly-finetuning-llm-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/pythontime/oreilly-finetuning-llm
+---
+
+# Oreilly Finetuning Llm Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: oreilly-finetuning-llm-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/pythontime/oreilly-finetuning-llm
+---
+
+# Oreilly Finetuning Llm Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: oreilly-finetuning-llm-workflow-add-or-update-notebooks-and-dependencies
+trigger: "when doing add or update notebooks and dependencies"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/oreilly-finetuning-llm
+---
+
+# Oreilly Finetuning Llm Workflow Add Or Update Notebooks And Dependencies
+
+## Action
+
+Follow the add-or-update-notebooks-and-dependencies workflow:
+1. Edit or add multiple .ipynb files related to model finetuning or data preparation.
+2. Update pyproject.toml and/or requirements.txt to reflect new or changed dependencies.
+3. Commit all changes together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: *.ipynb, pyproject.toml, requirements.txt
+
+---
+id: oreilly-finetuning-llm-workflow-update-presentation-pdf
+trigger: "when doing update presentation pdf"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/oreilly-finetuning-llm
+---
+
+# Oreilly Finetuning Llm Workflow Update Presentation Pdf
+
+## Action
+
+Follow the update-presentation-pdf workflow:
+1. Edit or generate new PDF presentation file(s) (e.g., YYYY-MM-DD Finetuning.pdf).
+2. Commit the new or updated PDF(s).
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: *Finetuning.pdf
+
+---
+id: oreilly-finetuning-llm-workflow-fix-readme-typo-or-update
+trigger: "when doing fix readme typo or update"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/oreilly-finetuning-llm
+---
+
+# Oreilly Finetuning Llm Workflow Fix Readme Typo Or Update
+
+## Action
+
+Follow the fix-readme-typo-or-update workflow:
+1. Edit README.md to fix typo or update content.
+2. Commit the change.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: README.md
+
